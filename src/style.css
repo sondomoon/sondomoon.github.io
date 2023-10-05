@@ -1,0 +1,9 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(media/brand-logo-white.svg);
+    background-repeat: round;
+    background-color: #151516;
+}
