@@ -1,20 +1,53 @@
+@font-face {
+    font-family: "Brand Header";
+    src: url("media/brand-header.ttf");
+}
+
+@font-face {
+    font-family: "Brand Text";
+    src: url("media/brand-text.ttf");
+}
+
 body {
-    height: 100svh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(media/brand-logo.svg);
-    background-repeat: round;
+    color: #fefefe;
     background-color: #151516;
     margin: 0;
 }
 
+.main-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-page_title {
+    height: 100svh;
+    background-image: url(media/brand-logo.svg);
+    background-repeat: round;
+}
+
+.main-page_contacts {
+    height: 100vh;
+    text-align: center;
+}
+
+.main-page-h1 {
+    font-size: calc(1.5rem + 2vw);
+    font-family: "Brand Header";
+    margin: 0;
+}
+
+.main-page-h2 {
+    font-size: calc(1rem + 1vw);
+    font-family: "Brand Text";
+}
+
 #brand-logo-eyeball {
-    animation: blink 5s infinite;
+    animation: blink 4s infinite;
 }
 
 #brand-logo-eyelid {
-    animation: squeeze 5s infinite;
+    animation: squeeze 4s infinite;
 }
 
 @keyframes blink {
