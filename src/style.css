@@ -1,9 +1,48 @@
 body {
-    height: 100vh;
+    height: 100svh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(media/brand-logo-white.svg);
+    background-image: url(media/brand-logo.svg);
     background-repeat: round;
     background-color: #151516;
+    margin: 0;
+}
+
+#brand-logo-eyeball {
+    animation: blink 5s infinite;
+}
+
+#brand-logo-eyelid {
+    animation: squeeze 5s infinite;
+}
+
+@keyframes blink {
+    95% {
+        transform: none;
+        animation-timing-function: ease-in;
+    }
+
+    97% {
+        transform: translateY(50%) scaleY(0);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes squeeze {
+    95% {
+        transform: none;
+        animation-timing-function: ease-in;
+    }
+
+    97% {
+        transform: translateY(10%) scaleY(0.8);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+    }
 }
