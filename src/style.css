@@ -24,8 +24,9 @@ body {
     align-items: center;
     justify-content: center;
     height: 100svh;
-    background-image: url(media/brand-logo.svg);
-    background-repeat: round;
+    background-image: url(media/color-background.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .contacts-page {
