@@ -1,3 +1,7 @@
+:root {
+    --brand-color-white: #fefefe;
+}
+
 @font-face {
     font-family: "Brand Header";
     src: url("media/brand-header.ttf");
@@ -9,37 +13,53 @@
 }
 
 body {
-    color: #fefefe;
+    color: var(--brand-color-white);
     background-color: #151516;
+    font-family: "Brand Text";
     margin: 0;
 }
 
-.main-page {
+.title-page {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.main-page_title {
     height: 100svh;
     background-image: url(media/brand-logo.svg);
     background-repeat: round;
 }
 
-.main-page_contacts {
+.contacts-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
     text-align: center;
 }
 
-.main-page-h1 {
+.contacts-page__logo {
+    margin: auto;
+}
+
+.contacts-page__h1 {
     font-size: calc(1.5rem + 2vw);
     font-family: "Brand Header";
     margin: 0;
 }
 
-.main-page-h2 {
+.contacts-page__h2 {
     font-size: calc(1rem + 1vw);
-    font-family: "Brand Text";
+}
+
+.contacts-page__footer {
+    margin-bottom: 2rem;
+}
+
+.contacts-page__link {
+    text-decoration: none;
+    font-style: normal;
+    color: var(--brand-color-white);
+    font-size: 1rem;
+    margin: 0 0.5rem;
 }
 
 #brand-logo-eyeball {
