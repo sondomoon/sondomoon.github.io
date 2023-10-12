@@ -32,23 +32,23 @@ body {
 .contacts-page {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100vh;
     text-align: center;
 }
 
 .contacts-page__logo {
-    margin: auto;
+    margin: auto 0;
+}
+
+.contacts-page__logo-image {
+    width: 80%;
+    max-width: 50em;
 }
 
 .contacts-page__h1 {
-    font-size: calc(1.5rem + 2vw);
-    font-family: "Brand Header";
-    margin: 0;
-}
-
-.contacts-page__h2 {
     font-size: calc(1rem + 1vw);
+    margin: 1.5rem 0 0;
+    font-weight: normal;
 }
 
 .contacts-page__footer {
